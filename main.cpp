@@ -789,3 +789,37 @@ switch (op) {
 int main(){
     menu();
 }
+
+
+//BUSCA TODO O ARQUIVO PARA ENCONTRAR UM REGISTRO ESPECIFICO
+//long id;
+//cout << "ID do produto a buscar: ";
+//cin >> id;
+//
+//FILE *db = fopen("db_produtos.dat", "rb");
+//if (db == NULL) {
+//    cout << "Nenhum produto cadastrado!" << endl;
+//} else {
+//    Reg_produto produto;
+//    bool encontrado = false;
+//    long pos_registro = -1;
+//
+//    fseek(db, 0, SEEK_SET);                  // 1. começa do início do arquivo
+//
+//    while (fread(&produto, sizeof(Reg_produto), 1, db) == 1) {   // 2. lê um registro por vez
+//        if (produto.pdID == id) {            // 3. compara o ID
+//            encontrado = true;
+//            pos_registro = ftell(db) - sizeof(Reg_produto);  // posição onde o registro começa
+//            break;                           // 4. para ao achar
+//        }
+//    }
+//
+//    if (encontrado) {
+//        cout << "Encontrado: " << produto.descricao << endl;
+//    } else {
+//        cout << "Produto nao encontrado." << endl;
+//    }
+//
+//    fclose(db);
+//}
+//
