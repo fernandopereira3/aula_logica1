@@ -64,6 +64,7 @@ int cadastro_produto() {
         fwrite(&produto, sizeof(Reg_produto), 1, db_produto);
         cout << "Produto cadastrado com sucesso!" << endl;
 
+
         cout << "Digite 1 para continuar ou 2 para sair: ";
         cin >> operador;
     } while (operador == 1);
@@ -700,7 +701,7 @@ int excluir_registro(){
                     }
                     fflush(db_fornecedor);
                     if (encontrado) {
-                        ftruncate(fileno(db_fornecedor), pos_escrita);
+                        ftruncate(fileno(db_fornecedor), pos_escrita)
                         cout << "Fornecedor excluido com sucesso!" << endl;
                     } else {
                         cout << "Fornecedor nao encontrado!" << endl;

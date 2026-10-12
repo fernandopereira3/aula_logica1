@@ -30,7 +30,7 @@ typedef struct Fornecedor {
     time_t cadastro;
 } Reg_fornecedor;
 
-const int N = 50;
+const int N = 10;
 
 int main() {
     srand(42);
